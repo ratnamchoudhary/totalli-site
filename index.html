@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Totalli.AI — Turn your Tally data into decisions</title>
+  <meta name="description" content="Totalli.AI gives you analytics, insights and custom reports on your Tally data — Financial, Revenue, Inventory and MIS — so you can automate decisions with confidence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316a394'/%3E%3Ctext x='50%25' y='54%25' font-size='18' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Totalli.AI home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+            <rect width="40" height="40" rx="11" fill="url(#lg)"/>
+            <path d="M11 26V14m6 12v-7m6 7v-15m6 15v-5" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1fb6a6"/><stop offset="1" stop-color="#2a8fd6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">Totalli<span class="brand-dot">.AI</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#reports">Reports</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-ghost">Sign in</a>
+        <a href="#contact" class="btn btn-primary">Book a demo</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Analytics for Tally, on autopilot</span>
+          <h1>Turn your <span class="grad">Tally data</span> into decisions you can trust.</h1>
+          <p class="lede">
+            Totalli.AI connects to your Tally and delivers beautiful, automated reports —
+            Financial, Revenue, Inventory and MIS — with the insights that help you act faster.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Book a free demo</a>
+            <a href="#how" class="btn btn-soft btn-lg">See how it works</a>
+          </div>
+          <ul class="hero-trust">
+            <li><svg class="ic" viewBox="0 0 20 20"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> No data leaves without your consent</li>
+            <li><svg class="ic" viewBox="0 0 20 20"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Works with your existing Tally</li>
+            <li><svg class="ic" viewBox="0 0 20 20"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Set up in minutes</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="dash">
+            <div class="dash-head">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="dash-title">Totalli · Business Overview</span>
+            </div>
+            <div class="dash-body">
+              <div class="kpis">
+                <div class="kpi">
+                  <span class="kpi-label">Revenue</span>
+                  <span class="kpi-value">₹48.2L</span>
+                  <span class="kpi-trend up">▲ 12.4%</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-label">Net Profit</span>
+                  <span class="kpi-value">₹9.6L</span>
+                  <span class="kpi-trend up">▲ 6.1%</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-label">Stock Value</span>
+                  <span class="kpi-value">₹21.4L</span>
+                  <span class="kpi-trend down">▼ 3.2%</span>
+                </div>
+              </div>
+              <div class="chart">
+                <svg viewBox="0 0 320 140" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#1fb6a6" stop-opacity="0.35"/>
+                      <stop offset="1" stop-color="#1fb6a6" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="spark-area" d="M0,110 L40,96 L80,104 L120,72 L160,80 L200,52 L240,60 L280,34 L320,40 L320,140 L0,140 Z" fill="url(#area)"/>
+                  <path class="spark-line" d="M0,110 L40,96 L80,104 L120,72 L160,80 L200,52 L240,60 L280,34 L320,40" fill="none" stroke="#1fb6a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="bars">
+                  <span style="--h:42%"></span><span style="--h:64%"></span><span style="--h:54%"></span>
+                  <span style="--h:80%"></span><span style="--h:70%"></span><span style="--h:92%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card fc-1">
+            <span class="fc-ic">📊</span>
+            <div><strong>MIS ready</strong><small>Auto-refreshed daily</small></div>
+          </div>
+          <div class="float-card fc-2">
+            <span class="fc-ic">⚡</span>
+            <div><strong>Alert</strong><small>Inventory below reorder</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Logos / trust strip ===== -->
+    <section class="strip">
+      <div class="container">
+        <p class="strip-label">Built for businesses that run on Tally</p>
+        <div class="strip-stats">
+          <div><b>10M+</b><span>vouchers analysed</span></div>
+          <div><b>40+</b><span>ready reports</span></div>
+          <div><b>5 min</b><span>to first insight</span></div>
+          <div><b>99.9%</b><span>uptime</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Totalli.AI</span>
+          <h2>Everything in your Tally, finally working for you.</h2>
+          <p>Stop exporting spreadsheets and chasing numbers. Totalli reads your Tally data and turns it into clear, living insight.</p>
+        </div>
+        <div class="grid features">
+          <article class="card reveal">
+            <span class="feat-ic">📈</span>
+            <h3>Insights, not just numbers</h3>
+            <p>We surface what changed, why it matters and what to do next — in plain language anyone on your team can act on.</p>
+          </article>
+          <article class="card reveal">
+            <span class="feat-ic">🧩</span>
+            <h3>Custom-built reports</h3>
+            <p>Financial, Revenue, Inventory and MIS reports tailored to how your business actually operates — not generic templates.</p>
+          </article>
+          <article class="card reveal">
+            <span class="feat-ic">🤖</span>
+            <h3>Automate decisions</h3>
+            <p>Set thresholds and rules. Totalli watches your data and nudges you the moment something needs attention.</p>
+          </article>
+          <article class="card reveal">
+            <span class="feat-ic">🔐</span>
+            <h3>Secure by design</h3>
+            <p>Your data stays yours. Encrypted in transit and at rest, with granular access for every team member.</p>
+          </article>
+          <article class="card reveal">
+            <span class="feat-ic">⏱️</span>
+            <h3>Always up to date</h3>
+            <p>Reports refresh automatically, so the number you see is the number that's true — every single day.</p>
+          </article>
+          <article class="card reveal">
+            <span class="feat-ic">👥</span>
+            <h3>Made for your whole team</h3>
+            <p>From the founder to finance to the floor — share clean dashboards everyone understands at a glance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reports ===== -->
+    <section class="section section-tint" id="reports">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Reports & MIS</span>
+          <h2>Four pillars of clarity, built on your Tally.</h2>
+          <p>Every report is generated from your real data and refreshed for you — no manual work, no guesswork.</p>
+        </div>
+        <div class="grid reports">
+          <article class="report reveal">
+            <div class="report-tag tag-fin">Financial</div>
+            <h3>Financial reporting</h3>
+            <p>P&amp;L, balance sheet, cash flow and ratios — explained, trended and ready to share with stakeholders.</p>
+            <ul>
+              <li>Profit &amp; loss trends</li>
+              <li>Cash flow visibility</li>
+              <li>Key financial ratios</li>
+            </ul>
+          </article>
+          <article class="report reveal">
+            <div class="report-tag tag-rev">Revenue</div>
+            <h3>Revenue analytics</h3>
+            <p>Understand what's selling, to whom and where the growth is — by product, customer, region and period.</p>
+            <ul>
+              <li>Top products &amp; customers</li>
+              <li>Region &amp; channel split</li>
+              <li>Seasonality &amp; forecasts</li>
+            </ul>
+          </article>
+          <article class="report reveal">
+            <div class="report-tag tag-inv">Inventory</div>
+            <h3>Inventory insights</h3>
+            <p>Keep stock lean and healthy with reorder alerts, ageing analysis and fast/slow mover tracking.</p>
+            <ul>
+              <li>Reorder &amp; stock-out alerts</li>
+              <li>Ageing &amp; dead stock</li>
+              <li>Fast vs. slow movers</li>
+            </ul>
+          </article>
+          <article class="report reveal">
+            <div class="report-tag tag-mis">MIS</div>
+            <h3>Custom MIS</h3>
+            <p>The numbers your business runs on, in one living dashboard — designed around your decisions.</p>
+            <ul>
+              <li>Tailored KPI dashboards</li>
+              <li>Department-wise views</li>
+              <li>Scheduled email digests</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>From Tally to insight in three calm steps.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Connect your Tally</h3>
+            <p>Securely link Totalli to your Tally in minutes. No migration, no disruption to how you already work.</p>
+          </div>
+          <div class="step-line" aria-hidden="true"></div>
+          <div class="step reveal">
+            <span class="step-num">2</span>
+            <h3>We build your reports</h3>
+            <p>Totalli analyses your data and assembles custom Financial, Revenue, Inventory and MIS reports for you.</p>
+          </div>
+          <div class="step-line" aria-hidden="true"></div>
+          <div class="step reveal">
+            <span class="step-num">3</span>
+            <h3>Decide with confidence</h3>
+            <p>Get clear insights and alerts, automate routine decisions and steer your business with real data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quote / social proof ===== -->
+    <section class="section quote-section">
+      <div class="container">
+        <blockquote class="quote reveal">
+          <p>“We stopped guessing. Totalli shows us exactly where the money and the stock are going — and tells us what to do about it.”</p>
+          <footer><span class="avatar">A</span> <span><strong>Finance Lead</strong> · Growing distribution business</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="section section-tint" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple plans that grow with you.</h2>
+          <p>Start with a guided demo. Pick a plan only when you see the value in your own numbers.</p>
+        </div>
+        <div class="grid pricing">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price-desc">For small businesses getting started with analytics.</p>
+            <div class="price"><span>₹</span>4,999<small>/mo</small></div>
+            <ul>
+              <li>Core Financial &amp; Revenue reports</li>
+              <li>Daily auto-refresh</li>
+              <li>Up to 3 users</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#contact" class="btn btn-soft btn-block">Start with a demo</a>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="badge">Most popular</span>
+            <h3>Growth</h3>
+            <p class="price-desc">For teams that want the full picture and automation.</p>
+            <div class="price"><span>₹</span>9,999<small>/mo</small></div>
+            <ul>
+              <li>All Starter features</li>
+              <li>Inventory &amp; custom MIS</li>
+              <li>Smart alerts &amp; rules</li>
+              <li>Up to 10 users</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Book a demo</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Enterprise</h3>
+            <p class="price-desc">For multi-branch businesses with bespoke needs.</p>
+            <div class="price price-custom">Custom</div>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>Multi-company &amp; branches</li>
+              <li>Bespoke report building</li>
+              <li>Unlimited users</li>
+              <li>Dedicated success manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-soft btn-block">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA / Contact ===== -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta-copy">
+            <h2>See your own Tally data come alive.</h2>
+            <p>Book a free, no-pressure demo. We'll connect a sample of your data and show you the insights waiting inside it.</p>
+            <ul class="cta-points">
+              <li><svg class="ic" viewBox="0 0 20 20"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 30-minute personalised walkthrough</li>
+              <li><svg class="ic" viewBox="0 0 20 20"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> No commitment, no card required</li>
+            </ul>
+          </div>
+          <form class="cta-form" id="demoForm" onsubmit="return Totalli.submit(event)">
+            <!-- Web3Forms config -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New Totalli.AI demo request" />
+            <input type="hidden" name="from_name" value="Totalli.AI Website" />
+            <!-- Honeypot spam trap (leave empty) -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91 98XXX XXXXX" pattern="[0-9+()\-\s]{7,}" required />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="demoSubmit">Book my demo</button>
+            <p class="form-note" id="formNote">We'll get back to you within one business day.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="url(#lg2)"/>
+              <path d="M11 26V14m6 12v-7m6 7v-15m6 15v-5" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+              <defs><linearGradient id="lg2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#1fb6a6"/><stop offset="1" stop-color="#2a8fd6"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name">Totalli<span class="brand-dot">.AI</span></span>
+        </a>
+        <p>Analytics and insights on your Tally data — so you can automate decisions with confidence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#reports">Reports</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#contact">Book a demo</a>
+        <a href="#contact">Contact</a>
+        <a href="#top">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@totalli.ai">hello@totalli.ai</a>
+        <a href="https://totalli.ai">totalli.ai</a>
+        <p class="addr">Bengaluru, Karnataka, India</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> AnalytixVeda Technologies Private Limited. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
